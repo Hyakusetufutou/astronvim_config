@@ -33,7 +33,7 @@ return {
     ["s"] = { '"_s'},
     ["S"] = { '"_S'},
     ["x"] = { '"_x'},
-    ["x"] = { '"_X'},
+    ["X"] = { '"_X'},
     ["<tab>"] = { "a<C-v><tab><esc>"},
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
