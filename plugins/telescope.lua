@@ -5,11 +5,22 @@ return {
     config = function(plugin, opts)
       -- run the core AstroNvim configuration function with the options table
       require("plugins.configs.telescope")(plugin, opts)
-
+      vim.cmd "autocmd User TelescopePreviewerLoaded setlocal number"
       require("telescope").setup {
         defaults = {
-          file_ignore_patterns = {
-            "/node_modules",
+          -- file_ignore_patterns = {
+          --   "/node_modules",
+          -- },
+          vimgrep_arguments = {
+            -- ripggrepコマンドのオプション
+            "rg",
+            "--color=never",
+            "--no-heading",
+            "--with-filename",
+            "--line-number",
+            "--column",
+            "--smart-case",
+            "-uu",
           },
         },
         pickers = {

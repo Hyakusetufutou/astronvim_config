@@ -13,4 +13,12 @@ return {
   --   "briones-gabriel/darcula-solid.nvim", 
   --   dependencies = {"rktjmp/lush.nvim",},
   -- },
+  -- {
+  --   'navarasu/onedark.nvim',
+  --   config = function()
+  --     require('onedark').setup {
+  --       style = 'dark'
+  --     }
+  --   end
+  -- },
 }

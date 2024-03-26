@@ -9,5 +9,6 @@ return {
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
-  { import = "astrocommunity.bars-and-lines.lualine-nvim" },
+  -- { import = "astrocommunity.bars-and-lines.lualine-nvim" },
+  { import = "astrocommunity.git.diffview-nvim" },
 }

@@ -6,14 +6,33 @@ return {
       {
         "t",
         function() require("hop").hint_words() end,
-        mode = { "n" },
+        mode = { "n", "v" },
         desc = "Hop hint words",
       },
       {
         "T",
         function() require("hop").hint_lines() end,
-        mode = { "n" },
+        mode = { "n", "v" },
         desc = "Hop hint lines",
+      },
+      {
+        "f",
+        function() require("hop").hint_char1() end,
+        mode = { "n", "v" },
+        desc = "Hop hint one char",
+      },
+      {
+        "F",
+        function() 
+          require("hop").hint_char1(
+            {
+              current_line_only = true,
+              -- direction = require("hop.hint").HintDirection.AFTER_CURSOR,
+            }
+          ) 
+        end,
+        mode = { "n", "v" },
+        desc = "Hop hint vertical",
       },
       -- {
       --   "f",
