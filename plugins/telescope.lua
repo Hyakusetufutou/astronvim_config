@@ -38,6 +38,12 @@ return {
             theme = "dropdown",
             -- file_encoding = "cp932",
           },
+          
+          git_files = {
+            previewer = false,
+            theme = "dropdown",
+            -- file_encoding = "cp932",
+          },
 
       --     planets = {
       --       show_pluto = true,

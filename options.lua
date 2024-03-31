@@ -7,7 +7,7 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
-    -- expandtab = true,
+    -- expandtab = false,
     -- list = true,
     -- listchars = { tab = "￫ ", space = "･"},
   },

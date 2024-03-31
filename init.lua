@@ -19,9 +19,9 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  -- colorscheme = "vscode",
+  colorscheme = "vscode",
   -- colorscheme = "catppuccin",
-  colorscheme = "kanagawa",
+  -- colorscheme = "kanagawa",
   -- colorscheme = "onedark",
   -- colorscheme = "darcula-solid",
 
@@ -75,6 +75,8 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- require("user.cmd")
+
+    vim.cmd "autocmd User TelescopePreviewerLoaded setlocal number"
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

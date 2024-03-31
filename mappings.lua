@@ -35,8 +35,13 @@ return {
     ["x"] = { '"_x'},
     ["X"] = { '"_X'},
     ["<C-_>"] = { "a<C-v><tab><esc>"},
+
+    ["<leader>fg"] = {':Telescope git_files<cr>', desc = "Find Files (git files)"},
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  },
+  i = {
+    ["<Tab>"] = {"<C-v><Tab>"},
   },
   t = {
     -- setting a mapping to false will disable it
